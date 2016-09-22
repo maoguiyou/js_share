@@ -1,0 +1,8 @@
+#git 常用到的命令
+###本地的git repertory关联 github上面的一个repertory,实现两个repertory的同步
+1.首先你得在本地和github上都有一个repertory
+2.然后在git中使用命令：git remote add origin git@github.com:/maoguiyou/js_share.git
+ps:*/maoguiyou/js_share.git这个改成你自己的repertory地址*
+
+3.关联上之后就可以使用命令把分支同步到github了：第一次：git push -u origin master ps：第一次要-u，后面都不需要-u参数
+因为第一次github上时空的，需要一个参数告诉git要把推送的master分支和推送到github上面的master分支关联
