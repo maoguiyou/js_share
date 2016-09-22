@@ -1,0 +1,8 @@
+#CalcEval.js使用说明
+
+*1.首先要先引入CalcEval.jd
+ 2.然后实例化构造函数  var calcu=new CalcEval();
+ 3.然后再把算式当成参数传进calcu对象暴露的eval方法：var result = calcu.eval("(0.7+0.1)/(45.6*13)");
+ ps:算式一定要记得加引号，eval要求参数必须是字符串
+*
+
