@@ -6,3 +6,20 @@ ps:*/maoguiyou/js_share.git这个改成你自己的repertory地址*
 
 3.关联上之后就可以使用命令把分支同步到github了：第一次：git push -u origin master ps：第一次要-u，后面都不需要-u参数
 因为第一次github上时空的，需要一个参数告诉git要把推送的master分支和推送到github上面的master分支关联
+
+###一次性提交所在目录的所有文件
+CLI:git add -A
+
+###git无法同步到远程库报错
+错误信息：
+git push -u origin master
+To git@github.com:XXXX.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:XXXXX.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+解决方案：
+git push -fu origin master
